@@ -40,6 +40,10 @@ CITIES = {
         "key": "wikipedia",
         "value": "en:Newton, Massachusetts"
     },
+    "Northampton": {
+        "key": "wikipedia",
+        "value": "en:Northampton, Massachusetts"
+    },
     "Lexington": {
         "key": "wikipedia",
         "value": "en:Lexington, Massachusetts"

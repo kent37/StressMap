@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>[Local] BCU Labs Stressmap</title>
+    <title>[Local] BCU Labs / STN Stressmap</title>
     <meta name="viewport"
           content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css"
@@ -13,6 +13,9 @@
             padding: 0;
         }
 
+        table {
+            font-size: 12px;
+        }
         #map {
             position: absolute;
             top: 0;
@@ -75,8 +78,20 @@
     mapboxgl.accessToken = 'pk.eyJ1IjoidHNjaGllZ2dtIiwiYSI6ImNrZHoyb25iYjMxMWQzM2p6eHlibHJkanIifQ.wj-SisFvNPgakxBy_1ZnHw';
     const map = new mapboxgl.Map({
         container: 'map', // container ID
-        center: [-71.057083, 42.361145], // Boston starting position [lng, lat]
+        center: [-72.667638, 42.3164662], // Noho starting position [lng, lat]
         style:'mapbox://styles/mapbox/dark-v11',
+        // style: 'mapbox://styles/mapbox/standard',
+        // config: {
+        //     basemap: {
+        //     lightPreset: 'day',
+        //     showPlaceLabels: false,
+        //     showPointOfInterestLabels: false,
+        //     theme: 'monochrome',
+        //     show3dObjects: false,
+        //     showTransitLabels: true,
+        //     showRoadLabels: true
+        //     }
+        // },
         zoom: baseZoom // starting zoom
     });
 
@@ -107,6 +122,8 @@
         map.addLayer({
             'id': 'lts-layer',
             'source': 'LTS_source',
+            //'source-layer': 'lts', // replaces 'road-label-simple' which seems to work for light-v11 but not standard style
+            // 'slot': 'middle',
             "type": "line",
             'paint': {
                 'line-color': [
@@ -126,7 +143,7 @@
         },
         'road-label-simple' // Add layer below labels
     );
-    map.setFilter('lts-layer', ['<=', ['get', 'zoom'], map.getZoom()]);
+    map.setFilter('lts-layer', ['<=', ['get', 'zoom'], map.getZoom()+2]);
     
     // create legend
     const legend = document.getElementById('legend');
@@ -309,7 +326,7 @@
 
         map.on('zoom', () => {
             document.getElementById('zoom').textContent = map.getZoom().toFixed(2);
-            map.setFilter('lts-layer', ['<=', ['get', 'zoom'], map.getZoom()]);
+            map.setFilter('lts-layer', ['<=', ['get', 'zoom'], map.getZoom()+2]);
         });
     })
 

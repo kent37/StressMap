@@ -13,7 +13,10 @@ This code is adapted from [Bike Ottawa's LTS code](https://github.com/BikeOttawa
 	for a `relation` of the region you want
 	- Fill in this info in the city info
 2. pip install requirements.txt, ideally in a virtual environment (venv)
-
+3. python3 main.py process -city Northampton
+4. python3 main.py plot -city Northampton
+5. python3 web.py
+6. Browse to [localhost:8080](http://localhost:800)
 
 ## TBD:
 Plot an isochrone map for different LTS thresholds with `isochrone.py`. This requires both the saved graph object and the dataframe with LTS levels calculated.
