@@ -177,7 +177,8 @@ def download_data(region):
     # keeping the footway and construction tags
     osmfilter = ('["highway"]["area"!~"yes"]["access"!~"private"]'
                 '["highway"!~"abandoned|bus_guideway|corridor|elevator|escalator|motor|'
-                'planned|platform|proposed|raceway|steps"]'
+                'planned|platform|proposed|raceway|steps|path|track"]'
+                '["surface"!~"dirt|ground"]'
                 '["service"!~"private"]'
                 '["indoor"!~"yes"]'
                 '["service"!="parking_aisle"]')
