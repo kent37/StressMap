@@ -1,0 +1,204 @@
+
+.venvStressMap $ python3 main.py process -city Northampton
+query/Northampton.query created
+Downloaing OSM map data for Northampton...
+        Downloaded OSM map data for Northampton
+Saved Northampton map data
+Finding way tags for Northampton...
+Cycleway tags:
+                    tag  count
+36             cycleway     43
+37        cycleway:both     40
+61       cycleway:right      9
+62        cycleway:left      8
+68   cycleway:both:lane      4
+73   cycleway:left:lane      4
+92  cycleway:right:lane      1
+        data/Northampton_2_way_tags.csv saved.
+Way tags added to osmnx settings.
+Downloading Northampton data (this may take some time)...
+Saving Northampton graph
+gdf_edges.shape=(76048, 114)
+gdf_nodes.shape=(35995, 6)
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_left_COLON_orientation' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_left' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_right' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_left' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_right' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_left' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_right' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_left' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_right' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_left' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_lane_COLON_right' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_both' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_left' is not defined
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_parking_COLON_condition_COLON_right' is not defined
+No cycleway:buffer column
+No cycleway:separation column
+No cycleway:width column
+Processing condition c01: (`highway` == 'proposed') | (`highway` == 'construction')
+Processing condition c02: ((`bicycle` == 'yes') | (`bicycle` == 'designated')) & (oneway == True)
+Processing condition c03: ((`bicycle` == 'yes') | (`bicycle` == 'designated')) & (oneway == -1)
+Processing condition c04: ((`bicycle` == 'yes') | (`bicycle` == 'designated')) & ((oneway != -1) & (oneway != True))
+Processing condition c05: (`cycleway` == 'share_busway') & ((`bicycle` == 'yes') | (`bicycle` == 'designated'))
+Processing condition c06: (`bicycle` == 'no') | (`bicycle` == 'dismount')
+Processing condition c07: (`access` == 'no') & ((`bicycle` != 'yes') & (`bicycle` != 'designated'))
+Processing condition c08: (`access` == 'no') & ((`bicycle` == 'yes') | (`bicycle` == 'designated'))
+Processing condition c09: ((`highway` == 'cycleway') | (`highway` == 'path')) & (oneway == True)
+Processing condition c10: ((`highway` == 'cycleway') | (`highway` == 'path')) & (oneway == -1)
+Processing condition c11: ((`highway` == 'cycleway') | (`highway` == 'path')) & ((oneway != -1) & (oneway != True))
+Processing condition c12: (highway == 'footway') & ~(footway == 'crossing') & (`footway` != 'sidewalk') & (`footway` != 'traffic_island') & (`footway` != 'access_aisle')
+Processing condition c13: ((`public_transport` == 'platform') | (`public_transport` == 'platform_access')) & ((`bicycle` != 'yes') & (`bicycle` != 'designated'))
+        Column used in condition does not exsist in this region:
+                name 'public_transport' is not defined
+Processing condition c20: ((`cycleway:right` == 'yes') | (`cycleway:right` == 'lane') | (`cycleway:right` == 'track') | (`cycleway:right` == 'shared_lane')) & (`cycleway:right:oneway` != '-1') & (oneway != True)
+        Column does not exsist in this region: 'cycleway:right:buffer'
+Processing condition c21: (`cycleway:right` == 'track') & (`cycleway:right:oneway` != '-1') & (oneway != True)
+Processing condition c22: ((`cycleway:left` == 'yes') | (`cycleway:left` == 'lane') | (`cycleway:left` == 'track') | (`cycleway:left` == 'shared_lane')) & (`cycleway:left:oneway` != '-1') & (oneway != True)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c23: (`cycleway:left` == 'track') & (`cycleway:left:oneway` != '-1') & (oneway != True)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c24: ((`cycleway:right` == 'no') | (`cycleway:right` == 'separate')) & (`cycleway:right:oneway` != '-1') & (oneway != True)
+Processing condition c25: ((`cycleway:left` == 'no') | (`cycleway:left` == 'separate')) & (`cycleway:left:oneway` != '-1') & (oneway != True)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c30: ((`cycleway:right` == 'yes') | (`cycleway:right` == 'lane') | (`cycleway:right` == 'track') | (`cycleway:right` == 'shared_lane')) & (`cycleway:right:oneway` == '-1') & (oneway != True)
+        Column does not exsist in this region: 'cycleway:right:buffer'
+Processing condition c31: (`cycleway:right` == 'track') & (`cycleway:right:oneway` == '-1') & (oneway != True)
+Processing condition c32: ((`cycleway:left` == 'yes') | (`cycleway:left` == 'lane') | (`cycleway:left` == 'track') | (`cycleway:left` == 'shared_lane')) & (`cycleway:left:oneway` == '-1') & (oneway != True)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c33: (`cycleway:left` == 'track') & (`cycleway:left:oneway` == '-1') & (oneway != True)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c40: ((`cycleway:right` == 'yes') | (`cycleway:right` == 'lane') | (`cycleway:right` == 'track') | (`cycleway:right` == 'shared_lane')) & (`cycleway:right:oneway` != '-1') & (oneway == True)
+        Column does not exsist in this region: 'cycleway:right:buffer'
+Processing condition c41: (`cycleway:right` == 'track') & (`cycleway:right:oneway` != '-1') & (oneway == True)
+Processing condition c42: ((`cycleway:left` == 'yes') | (`cycleway:left` == 'lane') | (`cycleway:left` == 'track') | (`cycleway:left` == 'shared_lane')) & (`cycleway:left:oneway` != '-1') & (oneway == True)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c43: (`cycleway:left` == 'track') & (`cycleway:left:oneway` != '-1') & (oneway == True)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c44: ((`cycleway:right` == 'no') | (`cycleway:right` == 'separate')) & (oneway == True)
+Processing condition c50: ((`cycleway:right` == 'yes') | (`cycleway:right` == 'lane') | (`cycleway:right` == 'track') | (`cycleway:right` == 'shared_lane')) & (`cycleway:right:oneway` == '-1') & (oneway == True)
+        Column does not exsist in this region: 'cycleway:right:buffer'
+Processing condition c51: (`cycleway:right` == 'track') & (`cycleway:right:oneway` == '-1') & (oneway == True)
+Processing condition c52: ((`cycleway:left` == 'yes') | (`cycleway:left` == 'lane') | (`cycleway:left` == 'track') | (`cycleway:left` == 'shared_lane')) & (`cycleway:left:oneway` == '-1') & (oneway == True)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c53: (`cycleway:left` == 'track') & (`cycleway:left:oneway` == '-1') & (oneway == True)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c54: ((`cycleway:left` == 'no') | (`cycleway:left` == 'separate')) & (oneway == True)
+Processing condition c55: ((`cycleway:left` != 'yes') | (`cycleway:left` != 'lane')) & (oneway == True)
+Processing condition c60: ((`cycleway:right` == 'yes') | (`cycleway:right` == 'lane') | (`cycleway:right` == 'track') | (`cycleway:right` == 'shared_lane')) & (`cycleway:right:oneway` != '-1') & (oneway == -1)
+        Column does not exsist in this region: 'cycleway:right:buffer'
+Processing condition c61: (`cycleway:right` == 'track') & (`cycleway:right:oneway` != '-1') & (oneway == -1)
+Processing condition c62: ((`cycleway:left` == 'yes') | (`cycleway:left` == 'lane') | (`cycleway:left` == 'track') | (`cycleway:left` == 'shared_lane')) & (`cycleway:left:oneway` != '-1') & (oneway == -1)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c63: (`cycleway:left` == 'track') & (`cycleway:left:oneway` != '-1') & (oneway == -1)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c70: ((`cycleway:right` == 'yes') | (`cycleway:right` == 'lane') | (`cycleway:right` == 'track') | (`cycleway:right` == 'shared_lane')) & (`cycleway:right:oneway` == '-1') & (oneway == -1)
+        Column does not exsist in this region: 'cycleway:right:buffer'
+Processing condition c71: (`cycleway:right` == 'track') & (`cycleway:right:oneway` == '-1') & (oneway == -1)
+Processing condition c72: ((`cycleway:left` == 'yes') | (`cycleway:left` == 'lane') | (`cycleway:left` == 'track') | (`cycleway:left` == 'shared_lane')) & (`cycleway:left:oneway` == '-1') & (oneway == -1)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c73: (`cycleway:left` == 'track') & (`cycleway:left:oneway` == '-1') & (oneway == -1)
+        Column used in condition does not exsist in this region:
+                name 'BACKTICK_QUOTED_STRING_cycleway_COLON_left_COLON_oneway' is not defined
+Processing condition c100: (`footway` == 'sidewalk') & ((`bicycle` != 'yes') & (`bicycle` != 'designated') & (`bicycle` != 'permissive')) & (`highway` == 'footway')
+Processing condition c101: (`footway` == 'sidewalk') & ((`bicycle` != 'yes') & (`bicycle` != 'designated') & (`bicycle` != 'permissive')) & (`highway` == 'path')
+Processing condition c102: (`footway` == 'crossing') & ((`bicycle` != 'yes') & (`bicycle` != 'designated') & (`bicycle` != 'permissive')) & (`highway` == 'footway')
+Processing condition c103: (`crossing` == 'informal') & ((`bicycle` != 'yes') & (`bicycle` != 'designated') & (`bicycle` != 'permissive')) & (`highway` == 'footway')
+Processing condition c104: (`highway` == 'footway') & (`footway` == 'access_aisle') & ((`bicycle` != 'yes') & (`bicycle` != 'designated') & (`bicycle` != 'permissive'))
+Processing condition c105: (`highway` == 'footway') & (`footway` == 'access_aisle') & ((`bicycle` == 'yes') | (`bicycle` == 'designated') | (`bicycle` == 'permissive'))
+Processing condition c106: (`tunnel` == 'yes') & ((`bicycle` != 'yes') & (`bicycle` != 'designated') & (`bicycle` != 'permissive'))
+Processing condition c107: (`tunnel` == 'building_passage') & ((`bicycle` != 'yes') & (`bicycle` != 'designated') & (`bicycle` != 'permissive'))
+Processing condition c108: (`highway` == 'footway') & (`foot` == 'private') & ((`bicycle` != 'yes') & (`bicycle` != 'designated') & (`bicycle` != 'permissive'))
+Processing condition c109: (`bus` == 'designated') & ((`bicycle` != 'yes') & (`bicycle` != 'designated') & (`bicycle` != 'permissive'))
+        Column used in condition does not exsist in this region:
+                name 'bus' is not defined
+Processing condition c200: (`highway` == 'motorway') | (`highway` == 'motorway_link')
+Processing condition c201: (`highway` == 'pedestrian') & ((`bicycle` != 'yes') & (`bicycle` != 'designated') & (`bicycle` != 'permissive'))
+Processing condition c202: (`highway` == 'pedestrian')
+Processing condition c203: (highway == 'service') & (service == 'alley')
+Processing condition c204: (highway == 'service') & (service == 'driveway')
+Processing condition c205: (highway == 'service')
+Processing condition c206: ((highway == 'track'))
+Processing condition c210: ((highway == 'residential') | (highway == 'living_street') | (highway == 'primary') | (highway == 'primary_link') | (highway == 'secondary') | (highway == 'secondary_link') | (highway == 'tertiary') | (highway == 'tertiary_link') | (highway == 'trunk') | (highway == 'trunk_link') | (highway == 'unclassified'))  & (oneway == True)
+Processing condition c211: ((highway == 'residential') | (highway == 'living_street') | (highway == 'primary') | (highway == 'primary_link') | (highway == 'secondary') | (highway == 'secondary_link') | (highway == 'tertiary') | (highway == 'tertiary_link') | (highway == 'trunk') | (highway == 'trunk_link') | (highway == 'unclassified')) & (oneway == -1)
+Processing condition c212: ((highway == 'residential') | (highway == 'living_street') | (highway == 'primary') | (highway == 'primary_link') | (highway == 'secondary') | (highway == 'secondary_link') | (highway == 'tertiary') | (highway == 'tertiary_link') | (highway == 'trunk') | (highway == 'trunk_link') | (highway == 'unclassified'))
+Completed lane parsing
+/Users/kent/Dev/StressMap/lts_functions.py:461: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gdf_edges[f'bike_reach_{dir}'] =    gdf_edges[f'bike_width_{dir}'].fillna(0) + \
+/Users/kent/Dev/StressMap/lts_functions.py:462: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gdf_edges[f'parking_width_{dir}'].fillna(0) + \
+/Users/kent/Dev/StressMap/lts_functions.py:463: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gdf_edges[f'buffer_{dir}'].fillna(0)
+/Users/kent/Dev/StressMap/lts_functions.py:461: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gdf_edges[f'bike_reach_{dir}'] =    gdf_edges[f'bike_width_{dir}'].fillna(0) + \
+/Users/kent/Dev/StressMap/lts_functions.py:462: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gdf_edges[f'parking_width_{dir}'].fillna(0) + \
+/Users/kent/Dev/StressMap/lts_functions.py:463: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gdf_edges[f'buffer_{dir}'].fillna(0)
+Saved columns values and counts of filters
+Evalutating LTS use mixed table...
+Evalutating LTS use bikelane_noparking table...
+Evalutating LTS use bikelane_yesparking table...
+Column used in condition does not exsist in this region:
+        name 'BACKTICK_QUOTED_STRING_cycleway_COLON_both' is not defined
+
+.venvStressMap $ python3 main.py plot -city Northampton
+Plotting Northampton
+
+.venvStressMap $ python3 web.py
+Serving at localhost:8000
+PLOT='map/local_data.html'
+127.0.0.1 - - [17/Aug/2025 14:51:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Aug/2025 14:51:09] code 404, message File not found
+127.0.0.1 - - [17/Aug/2025 14:51:09] "GET /favicon.ico HTTP/1.1" 404 -
+path[1:]='plots/LTS.json'
+127.0.0.1 - - [17/Aug/2025 14:51:12] "GET /plots/LTS.json HTTP/1.1" 200 -
