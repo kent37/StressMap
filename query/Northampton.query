@@ -3,8 +3,6 @@ area["wikipedia"="en:Northampton, Massachusetts"]->.search_area;
 .search_area out body;
 
 (
-    way[highway][footway!=sidewalk][service!=parking_aisle][surface!=ground][surface!=dirt][highway!=path](area.search_area);
-    way[footway=sidewalk][bicycle][bicycle!=no][bicycle!=dismount](area.search_area);
-);
+    way[highway][footway!=sidewalk][service!=parking_aisle][surface!=ground][surface!=dirt][highway!=path][highway!=crossing][highway!=service][highway!=footway][highway!=steps](area.search_area););
 out;
             

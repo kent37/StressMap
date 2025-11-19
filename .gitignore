@@ -1,8 +1,8 @@
 .venv
 .vscode
 .idea/
-data/
-plots/
+data*/
+plots*/
 cache/
 __pycache__/
 test.py

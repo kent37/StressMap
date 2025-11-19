@@ -81,8 +81,7 @@ def build_query(region, key, value):
             f.write('.search_area out body;\n')
             f.write("""
 (
-    way[highway][footway!=sidewalk][service!=parking_aisle](area.search_area);
-    way[footway=sidewalk][bicycle][bicycle!=no][bicycle!=dismount](area.search_area);
+    way[highway][footway!=sidewalk][service!=parking_aisle][surface!=ground][surface!=dirt][highway!=path][highway!=crossing][highway!=service][highway!=footway][highway!=steps](area.search_area););
 );
 out;
             """)
@@ -177,7 +176,7 @@ def download_data(region):
     # keeping the footway and construction tags
     osmfilter = ('["highway"]["area"!~"yes"]["access"!~"private"]'
                 '["highway"!~"abandoned|bus_guideway|corridor|elevator|escalator|motor|'
-                'planned|platform|proposed|raceway|steps|path|track"]'
+                'planned|platform|proposed|raceway|steps|path|track|service|path|crossing|footway"]'
                 '["surface"!~"dirt|ground"]'
                 '["service"!~"private"]'
                 '["indoor"!~"yes"]'
